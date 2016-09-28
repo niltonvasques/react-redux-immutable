@@ -1,0 +1,16 @@
+{
+  "name": "react-redux-immutable",
+  "version": "0.1.0",
+  "description": "Sample React Redux Immutable App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "immutable"
+  ],
+  "author": "Nilton Vasques",
+  "license": "ISC"
+}
