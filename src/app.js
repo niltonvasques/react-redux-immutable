@@ -1,16 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { List, Map } from 'immutable';
+import { createStore } from 'redux';
 import { TodoList } from './components';
+import reducer from './reducer';
 
-const dummyTodos = List([
-  Map({ id: 0, isDone: true,  text: 'make components' }),
-  Map({ id: 1, isDone: true, text: 'design actions' }),
-  Map({ id: 2, isDone: false, text: 'implement reducer' }),
-  Map({ id: 3, isDone: false, text: 'connect components' })
-]);
+const store = createStore(reducer);
 
 render(
-    <TodoList todos={dummyTodos} />,
+    <TodoList todos={store.getState()} />,
     document.getElementById('app')
 );
