@@ -6,7 +6,7 @@ export default function(todos=init, action){
   switch(action.type){
     case 'ADD_TODO':
       return todos.push(Map(action.payload));
-    case 'TOOGLE_TODO':
+    case 'TOGGLE_TODO':
       return todos.map(t => {
         if(t.get('id') === action.payload){
           return  t.update('isDone', isDone => !isDone);

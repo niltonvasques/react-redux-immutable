@@ -11,9 +11,9 @@ export function addTodo(text){
   };
 }
 
-export function toogleTodo(id){
+export function toggleTodo(id){
   return {
-    type: 'TOOGLE_TODO',
+    type: 'TOGGLE_TODO',
     payload: id
   };
 }
